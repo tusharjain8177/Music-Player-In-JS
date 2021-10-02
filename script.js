@@ -64,7 +64,7 @@ const img = document.querySelector('img');
             playMusic();
         }
         const prevSong = () => {
-            songIndex = (songIndex - 1 + song.length)
+            songIndex = (songIndex - 1 + song.length)%song.length;
             LoadSongs(song[songIndex]);
             playMusic()
         }
